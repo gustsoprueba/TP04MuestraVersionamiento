@@ -1,6 +1,12 @@
 package ar.edu.unju.edm.modelo;
 
-public class Equipo {
+import java.io.Serializable;
+
+public class Equipo implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String nombre;
 	private int dni;
 	
@@ -8,7 +14,12 @@ public class Equipo {
 	public Equipo() {
 			// TODO Auto-generated constructor stub
 		}
-
+	
+	public Equipo(String nombre, int dni) {
+		super();
+		this.nombre = nombre;
+		this.dni = dni;
+	}
 
 	public String getNombre() {
 		return nombre;
